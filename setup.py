@@ -1,37 +1,30 @@
-import setuptools
+from setuptools import setup, find_packages
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
 
-with open("requirements.txt", "r") as fh:
-    requirements = fh.read().splitlines()
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
 
-setuptools.setup(
-    name="betterpyhap",
-    version="1.0.0",
-    author="Jokubas Noruisis",
-    author_email="noruisis.jokubas@gmail.com",
-    description="A Python implementation of the HomeKit Accessory Protocol (HAP)",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/jkubas/BetterPyHap",
-    packages=setuptools.find_packages(),
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: Apache License",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Operating System :: OS Independent",
-    ],
+setup(
+    name='betterpyhap',
+    version='0.1.0',
+    packages=find_packages(),
     install_requires=requirements,
-    package_data={
-        'betterpyhap': ['resources/*'],
-    },
-    python_requires='>=3.6',
-)
-
+    include_package_data=True,
+    description='A Python implementation of the HomeKit Accessory Protocol (HAP)',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://github.com/jkubas/BetterPyHap',
+    author='jokubas noruisis',
+    author_email='noruisis.jokubas@example.com',
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+    ],
 )
