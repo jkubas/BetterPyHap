@@ -20,7 +20,7 @@ setup(
     author_email='noruisis.jokubas@example.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
