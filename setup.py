@@ -17,7 +17,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/jkubas/BetterPyHap',
     author='jokubas noruisis',
-    author_email='noruisis.jokubas@example.com',
+    author_email='noruisis.jokubas@gmail.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: Apache Software License',
